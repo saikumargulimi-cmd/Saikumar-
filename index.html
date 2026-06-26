@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Gulimi SaiKumar | CS Student Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- Particles Canvas -->
+<canvas id="particles"></canvas>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#about" onclick="closeMobile()">About</a>
+  <a href="#skills" onclick="closeMobile()">Skills</a>
+  <a href="#projects" onclick="closeMobile()">Projects</a>
+  <a href="#contact" onclick="closeMobile()">Contact</a>
+</div>
+
+<!-- ========================
+     NAVBAR
+======================== -->
+<nav class="nav" id="nav">
+  <div class="nav-logo">
+    <span>&lt;</span>SaiKumar<span>/&gt;</span>
+  </div>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact" class="nav-cta">Contact</a></li>
+  </ul>
+  <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- ========================
+     HERO
+======================== -->
+<section id="hero">
+  <div class="hero-glow-1"></div>
+  <div class="hero-glow-2"></div>
+
+  <div class="hero-inner">
+    <!-- left -->
+    <div>
+      <div class="hero-badge">
+        <div class="badge-dot"></div>
+        CS Student · 3rd Year · Open to Internships
+      </div>
+
+      <p class="hero-greeting">// Hello, world! 👋</p>
+
+      <h1 class="hero-name">
+        Hi, I'm<br>
+        <span class="highlight">Gulimi SaiKumar</span>
+      </h1>
+
+      <div class="hero-typewriter">
+        <span class="tw-prefix">$ </span>
+        <span id="typewriter"></span>
+        <span class="cursor-blink"></span>
+      </div>
+
+      <p class="hero-desc">
+        A passionate <strong style="color:var(--cyan)">Computer Science student</strong> at the start of an exciting journey — learning, building, and turning ideas into real projects. I love coding, problem-solving, and creating things that actually work!
+      </p>
+
+      <div class="hero-btns">
+        <a href="#projects" class="btn-primary">
+          <span>🚀 View My Projects</span>
+        </a>
+        <a href="#contact" class="btn-secondary">
+          ✉ Get in Touch
+        </a>
+      </div>
+    </div>
+
+    <!-- right card -->
+    <div class="hero-card">
+      <div class="avatar-ring">
+        <div class="avatar-inner">SaiKumar</div>
+      </div>
+      <div class="card-name">Gulimi SaiKumar</div>
+      <div class="card-role">// CS Student · 3rd Year</div>
+      <div class="card-tags">
+        <span class="ctag">Python</span>
+        <span class="ctag v">HTML/CSS</span>
+        <span class="ctag">Java</span>
+      </div>
+      <div class="card-divider"></div>
+      <div class="card-stat-row">
+        <div>
+          <div class="cstat-n">1+</div>
+          <div class="cstat-l">Projects</div>
+        </div>
+        <div>
+          <div class="cstat-n">3rd</div>
+          <div class="cstat-l">Year Degree</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="scroll-ind">
+    <div class="s-line"></div>
+    scroll down
+  </div>
+</section>
+
+<!-- ========================
+     ABOUT
+======================== -->
+<section class="section section-dark" id="about">
+  <div class="maxw">
+    <div class="about-grid">
+      <!-- photo side -->
+      <div class="reveal-left">
+        <div class="about-photo-wrap">
+          <div class="about-photo">
+            <div class="photo-emoji">👩‍💻</div>
+          </div>
+          <div class="about-corner-tl"></div>
+          <div class="about-corner-br"></div>
+          <div class="about-badge">📍 Visakhapatnam, India</div>
+        </div>
+      </div>
+
+      <!-- text side -->
+      <div class="about-content reveal-right">
+        <div class="section-label">About Me</div>
+        <h2 class="section-title">Student. Coder.<br>Problem Solver. 💡</h2>
+
+        <p>Hey there! I'm <strong>SaiKumar</strong>, a 3rd-year Degree Computer Science student with a big passion for technology and an even bigger curiosity to learn. I'm just getting started, and I'm loving every moment of it!</p>
+        <p>I enjoy building small projects, solving coding challenges, and learning new technologies. My goal is to grow into a skilled full-stack developer and contribute to meaningful tech solutions.</p>
+
+        <div class="about-info-grid">
+          <div class="info-item">
+            <span class="info-icon">🎓</span>
+            <div>
+              <span class="info-label">Degree</span>
+             
+            </div>
+          </div>
+          <div class="info-item">
+            <span class="info-icon">📅</span>
+            <div>
+              <span class="info-label">Year</span>
+              <span class="info-val">3rd Year (2024–28)</span>
+            </div>
+          </div>
+          <div class="info-item">
+            <span class="info-icon">📍</span>
+            <div>
+              <span class="info-label">Location</span>
+              <span class="info-val">Vizayanagaram</span>, AP</span>
+            </div>
+          </div>
+          <div class="info-item">
+            <span class="info-icon">💼</span>
+            <div>
+              <span class="info-label">Looking For</span>
+              <span class="info-val">Internships & Projects</span>
+            </div>
+          </div>
+        </div>
+
+        <p style="font-size:0.82rem;color:var(--text3);font-family:var(--ff-code);margin-bottom:0.6rem;">// Interests & Hobbies</p>
+        <div class="about-interests">
+          <span class="interest-tag">💻 Web Dev</span>
+          <span class="interest-tag">playing games</span>
+          <span class="interest-tag">reading books</span>
+          <span class="interest-tag">listening music</span>
+          <span class="interest-tag">📚 Learning</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================
+     SKILLS
+======================== -->
+<section class="section" id="skills">
+  <div class="maxw">
+    <div class="section-header reveal">
+      <div class="section-label">My Skills</div>
+      <h2 class="section-title">What I'm Learning & Building With</h2>
+      <p class="section-sub">As a 3rd-year student, I'm actively learning these technologies through coursework, online resources, and hands-on projects.</p>
+    </div>
+
+    <div class="skills-grid">
+      <!-- Programming Languages -->
+      <div class="skill-card reveal">
+        <div class="sk-top">
+          <div class="sk-icon">⌨️</div>
+          <div>
+            <div class="sk-label">Core</div>
+            <div class="sk-title">Programming</div>
+          </div>
+        </div>
+        <div class="sk-tags" style="margin-bottom:1rem">
+          <span class="stag">Python</span>
+          <span class="stag">Java</span>
+          <span class="stag">C</span>
+          <span class="stag">JavaScript</span>
+        </div>
+        <div class="sk-bar-wrap">
+          <div class="sk-bar-row"><span>Python</span><span>75%</span></div>
+          <div class="sk-bar-bg"><div class="sk-bar-fill" data-w="75"></div></div>
+          <div class="sk-bar-row"><span>Java</span><span>60%</span></div>
+          <div class="sk-bar-bg"><div class="sk-bar-fill" data-w="60"></div></div>
+          <div class="sk-bar-row"><span>C</span><span>65%</span></div>
+          <div class="sk-bar-bg"><div class="sk-bar-fill" data-w="65"></div></div>
+        </div>
+      </div>
+
+      <!-- Web Dev -->
+      <div class="skill-card violet-card reveal">
+        <div class="sk-top">
+          <div class="sk-icon violet">🌐</div>
+          <div>
+            <div class="sk-label violet">Frontend</div>
+            <div class="sk-title">Web Development</div>
+          </div>
+        </div>
+        <div class="sk-tags" style="margin-bottom:1rem">
+          <span class="stag">HTML5</span>
+          <span class="stag">CSS3</span>
+          <span class="stag">JavaScript</span>
+          <span class="stag">Bootstrap</span>
+        </div>
+        <div class="sk-bar-wrap">
+          <div class="sk-bar-row violet-txt"><span>HTML/CSS</span><span>80%</span></div>
+          <div class="sk-bar-bg"><div class="sk-bar-fill violet" data-w="80"></div></div>
+          <div class="sk-bar-row violet-txt"><span>JavaScript</span><span>55%</span></div>
+          <div class="sk-bar-bg"><div class="sk-bar-fill violet" data-w="55"></div></div>
+        </div>
+      </div>
+
+      <!-- CS Fundamentals -->
+      <div class="skill-card reveal">
+        <div class="sk-top">
+          <div class="sk-icon">🧩</div>
+          <div>
+            <div class="sk-label">Fundamentals</div>
+            <div class="sk-title">CS Concepts</div>
+          </div>
+        </div>
+        <div class="sk-tags" style="margin-bottom:1rem">
+          <span class="stag">Data Structures</span>
+          <span class="stag">Algorithms</span>
+          <span class="stag">OOP</span>
+          <span class="stag">DBMS</span>
+        </div>
+        <div class="sk-bar-wrap">
+          <div class="sk-bar-row"><span>DSA</span><span>55%</span></div>
+          <div class="sk-bar-bg"><div class="sk-bar-fill" data-w="55"></div></div>
+          <div class="sk-bar-row"><span>OOP</span><span>70%</span></div>
+          <div class="sk-bar-bg"><div class="sk-bar-fill" data-w="70"></div></div>
+          <div class="sk-bar-row"><span>DBMS</span><span>50%</span></div>
+          <div class="sk-bar-bg"><div class="sk-bar-fill" data-w="50"></div></div>
+        </div>
+      </div>
+
+      <!-- Tools -->
+      <div class="skill-card violet-card reveal">
+        <div class="sk-top">
+          <div class="sk-icon violet">🛠️</div>
+          <div>
+            <div class="sk-label violet">Tools</div>
+            <div class="sk-title">Dev Tools</div>
+          </div>
+        </div>
+        <div class="sk-tags" style="margin-bottom:1rem">
+          
+          <span class="stag">MySQL</span>
+        </div>
+        <div class="sk-bar-row violet-txt"><span>MySQL</span><span>55%</span></div>
+        <div class="sk-bar-bg"><div class="sk-bar-fill violet" data-w="55"></div></div>
+
+        <div class="sk-bar-bg"><div class="sk-bar-fill violet" data-w="85"></div></div>
+      </div>
+
+      <!-- Soft Skills -->
+      <div class="skill-card reveal">
+        <div class="sk-top">
+          <div class="sk-icon">🌟</div>
+          <div>
+            <div class="sk-label">Soft Skills</div>
+            <div class="sk-title">People Skills</div>
+          </div>
+        </div>
+        <div class="sk-tags">
+          <span class="stag">Team Work</span>
+          <span class="stag">Problem Solving</span>
+          <span class="stag">Communication</span>
+          <span class="stag">Quick Learner</span>
+          <span class="stag">Creative</span>
+        </div>
+      </div>
+
+      <!-- Currently Learning -->
+      <div class="skill-card violet-card reveal">
+        <div class="sk-top">
+          <div class="sk-icon violet">📖</div>
+          <div>
+            <div class="sk-label violet">In Progress</div>
+            <div class="sk-title">Currently Learning</div>
+          </div>
+        </div>
+        <div class="sk-tags">
+          <span class="stag">React.js</span>
+          <span class="stag">Node.js</span>
+          <span class="stag">Machine Learning</span>
+          <span class="stag">SQL</span>
+          <span class="stag">Data Science</span>
+          <span class="stag">Data Structures</span>
+        </div>
+        <p style="font-size:0.75rem;color:var(--text3);margin-top:1rem;font-family:var(--ff-code);">// always growing 🚀</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================
+     PROJECTS
+======================== -->
+<section class="section section-dark" id="projects">
+  <div class="maxw">
+    <div class="section-header reveal">
+      <div class="section-label">My Projects</div>
+      <h2 class="section-title">Things I've Built 🏗️</h2>
+      <p class="section-sub">These are projects I've built while learning — from simple web pages to web development programs. Every project taught me something new!</p>
+    </div>
+
+    <div class="projects-grid">
+      <div class="project-card violet-proj reveal">
+        <div class="proj-banner violet-bg">
+          <span class="proj-banner-num">// 01</span>
+          <span style="font-size:3rem">📝</span>
+          <span class="proj-banner-status violet">In Progress</span>
+        </div>
+        <div class="proj-body">
+          <div class="proj-title">Calculator App</div>
+          <p class="proj-desc">It is used to calculate any problem looks like a normal caluculator design by using html,css,and javascript.</p>
+          <div class="proj-stack">
+            <span class="stag">HTML</span><span class="stag">CSS</span><span class="stag">JavaScript</span><span class="stag">MongoDB</span>
+          </div>
+        </div>
+        
+      </div>
+
+      <div class="project-card violet-proj reveal">
+        <div class="proj-banner pink-bg">
+          <span class="proj-banner-num">// 02</span>
+          <span style="font-size:3rem">🎨</span>
+          <span class="proj-banner-status violet">Completed</span>
+        </div>
+        <div class="proj-body">
+          <div class="proj-title">Personal Portfolio</div>
+          <p class="proj-desc">This portfolio website itself! Designed and built from scratch using pure HTML, CSS and JavaScript. Focused on animations, responsive layout, and clean UI design.</p>
+          <div class="proj-stack">
+            <span class="stag">HTML5</span><span class="stag">CSS3</span><span class="stag">JavaScript</span><span class="stag">Animations</span>
+          </div>
+        </div>
+        <div class="proj-foot">
+          <a href="#" class="proj-btn fill">You're Here! 🎉</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================
+     CONTACT
+======================== -->
+<section class="section" id="contact">
+  <div class="maxw">
+    <div class="contact-wrap">
+      <!-- left -->
+      <div class="reveal-left">
+        <div class="section-label">Contact</div>
+        <h2 class="section-title">Let's Connect! 🤝</h2>
+        <p style="font-size:0.9rem;color:var(--text2);line-height:1.9;margin:1rem 0 2rem;">I'm always excited to connect with fellow students, mentors, and anyone in the tech world! Whether it's for a project collaboration, internship opportunity, or just a friendly chat about coding — feel free to reach out. 😊</p>
+        <div class="contact-links">
+          <a href="mailto:saikumargulimi@gmail.com" class="contact-card">
+            <div class="cc-icon cyan">✉</div>
+            <div>
+              <div class="cc-label">Email</div>
+              <div class="cc-val">saikumargulimi@gmail.com</div>
+            </div>
+          </a>
+          <a href="https://www.linkedin.com/in/sai-kumar-gulimi-6a381b36a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android" target="_blank" class="contact-card">
+            <div class="cc-icon violet" style="font-size:0.75rem;font-weight:800">in</div>
+            <div>
+              <div class="cc-label">LinkedIn</div>
+              <div class="cc-val">https://www.linkedin.com/in/sai-kumar-gulimi-6a381b36a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app</div>
+            </div>
+          </a>
+          
+        </div>
+      </div>
+
+      <!-- right: resume -->
+      <div class="reveal-right">
+        <div class="resume-panel">
+          <div class="rp-head">
+            <div class="rp-icon">📄</div>
+            <div>
+              <div class="rp-title">My Resume</div>
+            </div>
+          </div>
+          <div class="rp-sub">// download_resume --format [pdf|docx|txt]</div>
+
+          <button class="rp-toggle" id="rpBtn" onclick="toggleResume()">
+            ⬇ Download My Resume
+            <em class="arr">›</em>
+          </button>
+          <div class="rp-drop" id="rpDrop">
+            <div class="rp-options">
+              <a href="resume.pdf" download class="rp-option">
+                <em class="rp-opt-icon">⬇</em> PDF Format — Best for sharing
+              </a>
+           
+         
+            </div>
+          </div>
+
+          <div class="available-badge">
+            <div class="av-dot"></div>
+            <div>
+              <div class="av-text-a">Available for Internships</div>
+              <div class="av-text-b">Open to learning opportunities & projects</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================
+     FOOTER
+======================== -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo">&lt;SaiKumar /&gt;</div>
+    <ul class="footer-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <p>Made with <span>♥</span> by Gulimi SaiKumar © 2026</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
